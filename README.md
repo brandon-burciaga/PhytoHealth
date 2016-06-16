@@ -8,4 +8,4 @@ I will soon get a live demo up so anyone can check out the features and responsi
 
 In the mean time, this README will be updated accordingly as the application continues to develop. The end result should be quite awesome and I am looking forward to releasing it when it is ready!
 
-![Image could not be loaded](home1.png "PhytoHealth_Home")
+![Image could not be loaded](home.png "PhytoHealth_Home")

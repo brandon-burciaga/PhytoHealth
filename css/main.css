@@ -1,0 +1,221 @@
+html, body {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background-color: #333333;
+    width: 100%;
+}
+
+/* Navbar */
+.navbar-static-top,
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    border-radius: 0;
+    background-color: #333333;
+    height: 75px;
+    font-size: 18px;
+}
+
+/* Navbar title/brand */
+.navbar-inverse .navbar-brand {
+    color: #32cd32;
+    font-size: 56px;
+    font-weight: bolder;
+    text-shadow: 5px 6px 6px rgb(0, 0, 0);
+    margin-top: 12px;
+}
+
+/* Override float */
+@media (min-width: 768px) {
+    .navbar-right {
+        float: none !important;
+    }
+}
+
+/* Navbar buttons */
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    background-color: transparent;
+    color: #f7f7f7;
+    font-size: 22px;
+    font-weight: bold;
+    border-left: 2px solid #32cd32;
+    margin-left: 50px;
+    padding-left: 75px;
+    margin-top: 12px;
+}
+
+/* Navbar container */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: inherit;
+}
+
+/* CAROUSEL */
+
+.carousel,
+.item,
+.active {
+    width:100%;
+}
+
+.carousel-inner {
+    width:100%;
+    height: 700px;
+}
+
+/* Slide text background box */
+.carousel-caption {
+    top: 22%;
+    bottom: auto;
+    background: rgba(51, 51, 51, 0.9);
+    max-width: 800px;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Header for each slide */
+.carousel-caption h1 {
+    line-height: 1.25;
+    width: 800px;
+    color: #32cd32;
+    font-weight: bolder;
+    margin: auto;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .7);
+}
+
+/* Text for each slide */
+.carousel-caption .lead {
+    line-height: 1.25;
+    max-width: 720px;
+    color: #d9d9d9;
+    font-weight: bolder;
+    text-shadow: 1px 1px rgba(0, 0, 0, .5);
+    margin: 5px auto;
+}
+
+/* Buttons for slides */
+.btn, .btn-lg, .btn-primary {
+    padding: 14px 24px;
+    margin-top: 15px;
+    border: 2px solid #32cd32;
+    font-size: 24px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .7);
+    border-radius: 8px;
+    background: transparent;
+    color: #32cd32;
+}
+
+/* hover/active buttons */
+.btn-primary:active, .btn-primary.active,
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active,
+.btn-primary.active, .open > .dropdown-toggle.btn-primary,
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    box-shadow: 2px 2px 2px 2px #32cd32;
+    background: transparent;
+    border: 2px solid #32cd32;
+    color: #32cd32;
+}
+
+/* divider above circle images */
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 3px solid #32cd32;
+}
+
+/* Circle images*/
+
+.img-circle {
+    margin-top: 0;
+    width: 125px;
+    height: 125px;
+}
+
+/* Float circle images */
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-20px);
+    box-shadow: 10px 10px 5px #32cd32;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+    background-color: #333333;
+}
+
+/* text below circle images */
+h2, .h2 {
+    font-size: 30px;
+    color: #f7f7f7;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #333333;
+    height: 300px;
+}
+
+
+/* TODO: create pages and customize */
+
+/* Phyto page */
+.phyto {
+    height: 700px;
+    background-color: #32cd32;
+}
+
+/* About page */
+.about {
+    height: 700px;
+    background-color: blue;
+}
+
+/* Database page */
+.database {
+    height: 700px;
+    background-color: orange;
+}
+
+/* Flavonoid page */
+.flav {
+    height: 700px;
+    background-color: red;
+}
+
+/* Isoflavone page */
+.iso {
+    height: 700px;
+    background-color: yellow;
+}
+
+/* Proanthocyanidin page */
+.pro {
+    height: 700px;
+    background-color: purple;
+}

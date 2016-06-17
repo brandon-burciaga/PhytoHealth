@@ -32,9 +32,7 @@ html, body {
 }
 
 /* Navbar buttons */
-.navbar-inverse .navbar-nav>li>a,
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
+.navbar-inverse .navbar-nav>li>a {
     background-color: transparent;
     color: #f7f7f7;
     font-size: 22px;
@@ -43,6 +41,11 @@ html, body {
     margin-left: 50px;
     padding-left: 75px;
     margin-top: 12px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: #32cd32;
 }
 
 /* Navbar container */
@@ -82,7 +85,7 @@ html, body {
 /* Header for each slide */
 .carousel-caption h1 {
     line-height: 1.25;
-    width: 800px;
+    max-width: 800px;
     color: #32cd32;
     font-weight: bolder;
     margin: auto;
@@ -105,7 +108,7 @@ html, body {
     margin-top: 15px;
     border: 2px solid #32cd32;
     font-size: 24px;
-    font-weight: bolder;
+    font-weight: bold;
     letter-spacing: 1px;
     text-shadow: 0 3px 3px rgba(0, 0, 0, .7);
     border-radius: 8px;
@@ -196,12 +199,6 @@ h2, .h2 {
     background-color: blue;
 }
 
-/* Database page */
-.database {
-    height: 700px;
-    background-color: orange;
-}
-
 /* Flavonoid page */
 .flav {
     height: 700px;
@@ -218,4 +215,85 @@ h2, .h2 {
 .pro {
     height: 700px;
     background-color: purple;
+}
+
+
+/* Database page JUMBOTRON */
+
+.jumbotron {
+    height: 700px;
+    position: relative;
+    width: 100%;
+    align-content: center;
+    z-index: 1;
+    background: url('../images/bacon.jpg') no-repeat center center;
+    margin-bottom: 0;
+}
+
+.smoothie {
+    z-index: -1;
+}
+
+.jumboContainer {
+    color: #32cd32;
+    text-shadow: #32cd32;
+    height: 350px;
+    width: 1200px;
+    background: rgba(51, 51, 51, 0.92);
+    margin: 125px 400px 200px 350px;
+    position: absolute;
+    text-align: center;
+    overflow: auto;
+    font-size: 32px;
+}
+
+.jumboContainer h1 {
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: bolder;
+    text-shadow: 0 3px 3px rgb(0, 0, 0);
+}
+
+.txtUrl {
+    height: 50px;
+    width: 800px;
+    margin: 25px 130px;
+    border-radius: 15px;
+    z-index: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* RESPONSE HEADER AND TABLE */
+
+.jumboContainer h2 {
+    color: #f7f7f7;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.resultstable tbody {
+    background: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    vertical-align: middle;
+    text-align: center;
+    width: 800px;
+    height: 500px;
+    color: #32cd32;
+    overflow: auto;
+}
+
+.resultstable th {
+    font-size: 22px;
+    text-align: center;
+    width: 160px;
+}
+
+.resultstable tbody tr > td > a {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px 5px 5px;
+    min-width: 100px;
+    color: #32cd32;
 }

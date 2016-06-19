@@ -1,7 +1,7 @@
 /**
  * Main PhytoHealth AngularJs Web Application
  */
-var app = angular.module('tutorialWebApp', [
+var app = angular.module('phytohealth', [
   'ngRoute'
 ]);
 
@@ -31,6 +31,9 @@ app.config(['$routeProvider', function($routeProvider) {
       // Pro
       .when("/pro", { templateUrl: "partials/pro.html", controller: "PageCtrl" })
 
+      // Login
+      .when("/login", { templateUrl: "partials/login.html", controller: "PageCtrl" })
+
       // Blog
       .when("/blog", { templateUrl: "partials/blog.html", controller: "BlogCtrl" })
       .when("/blog/post", { templateUrl: "partials/blog_item.html", controller: "BlogCtrl" })
@@ -42,14 +45,14 @@ app.config(['$routeProvider', function($routeProvider) {
 /**
  * Controls the blog where new articles, recipes, research, etc are posted
  */
-app.controller('BlogCtrl', function( /* $scope, $location, $http */ ) {
+app.controller('BlogCtrl', function(  ) {
   console.log("Blog Controller reporting for duty.");
 });
 
 /**
  * Controls all other pages of the app
  */
-app.controller('PageCtrl', function( /* $scope, $location, $http */ ) {
+app.controller('PageCtrl', function( ) {
   console.log("Page Controller reporting for duty.");
 
   $('.carousel').carousel({

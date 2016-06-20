@@ -1,17 +1,19 @@
-html, body {
+
+html {
+    position: relative;
+    min-height: 100%;
     font-size: 10px;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     background-color: #333333;
     width: 100%;
+    overflow: hidden;
 }
 
-/* Navbar container */
+/*!* Navbar container *!*/
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: 10px;
-    margin-left: 10px;
     width: inherit;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 /* Navbar */
@@ -31,6 +33,14 @@ html, body {
     font-weight: bolder;
     text-shadow: 5px 6px 6px rgb(0, 0, 0);
     margin-top: 12px;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #f7f7f7;
+}
+.navbar-inverse .navbar-brand:focus {
+    color: #32cd32;
+    background-color: transparent;
 }
 
 /* Collapsed navbar */
@@ -146,6 +156,12 @@ hr {
 
 /* Circle images*/
 
+.row {
+    width: 100%;
+    position: absolute;
+    height: 200px;
+
+}
 .img-circle {
     margin-top: 0;
     width: 125px;
@@ -170,7 +186,9 @@ hr {
     transition-timing-function: ease-out;
 }
 
-.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
     -webkit-transform: translateY(-12px);
     transform: translateY(-20px);
     box-shadow: 10px 10px 5px #32cd32;
@@ -188,18 +206,88 @@ h2, .h2 {
     font-weight: bold;
 }
 
-.footer {
-    background-color: #333333;
-    height: 300px;
-}
-
 
 /* TODO: create pages and customize */
 
 /* Phyto page */
 .phyto {
+    margin-top: 150px;
+    margin-bottom: 250px;
     height: 700px;
-    background-color: #32cd32;
+    background-color: #333333;
+    color: #f7f7f7;
+    font-size: 24px;
+    width: 100%;
+    overflow: auto;
+}
+
+.phyto::-webkit-scrollbar {
+    display: none;
+}
+
+.whitespace {
+    height: 150px;
+    background-color: #333333;
+}
+
+.featurette {
+    height: 700px;
+}
+
+.featurette-image.pull-right {
+    margin-right: 50px;
+    margin-top: 75px;
+    margin-left: 20px;
+}
+.featurette-heading {
+    color: #32cd32;
+    font-size: 40px;
+    margin-left: 20px;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .7);
+    font-weight: bolder;
+}
+
+.featurette-divider {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.featurette-divider.inner {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.phytotext {
+    margin-right: 33%;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.phytotext.two {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.featurette.question {
+    height: 50px;
+    width: 1600px;
+    margin: 100px auto;
+    z-index: 1;
+}
+
+.featurette.question p {
+    color: #f7f7f7;
+    font-size: 40px;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .7);
+    font-weight: bolder;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    /*margin-top: 40px;*/
+    /*margin-botom: 40px;*/
 }
 
 /* About page */
@@ -244,18 +332,24 @@ h2, .h2 {
 
 /* Database page JUMBOTRON */
 
+/* General jumbotron background properties */
 .jumbotron {
     height: 700px;
     position: relative;
     width: 100%;
     align-content: center;
     z-index: 1;
-    background: url('../images/bacon.jpg') no-repeat center center;
     margin-bottom: 0;
 }
 
+/* Log in page background image */
 .jumbotron.login {
-        background: url('../images/plant.jpg') no-repeat center center;
+    background: url('../images/plant.jpg') no-repeat center center;
+}
+
+/* Recipe page background image */
+.jumbotron.recipe {
+    background: url('../images/smoothie.jpg') no-repeat center center;
 }
 
 .jumbotron p {
@@ -264,10 +358,6 @@ h2, .h2 {
     font-weight: bold;
     color: #f7f7f7;
     display: inline-block;
-}
-
-.smoothie {
-    z-index: -1;
 }
 
 .jumboContainer {
@@ -335,4 +425,21 @@ h2, .h2 {
     padding: 5px 5px 5px;
     min-width: 100px;
     color: #32cd32;
+}
+
+#lowerbody {
+    height: 200px;
+    background-color: #333333;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer {
+    position: fixed;
+    margin-top: 200px;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    background-color: #333333;
 }
